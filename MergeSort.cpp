@@ -35,14 +35,6 @@ private:
             list.add(start + i, temp.get(i));
         }
     }
-
-public:
-    static void sort(DynamicList<int>& list) {
-        if (list.size() <= 1) return;
-        sort(list, 0, list.size() - 1);
-    }
-
-private:
     static void sort(DynamicList<int>& list, int start, int end) {
         if (start >= end) return;
 
@@ -50,5 +42,11 @@ private:
         sort(list, start, mid);
         sort(list, mid + 1, end);
         merge(list, start, mid, end);
+    }
+
+public:
+    static void sort(DynamicList<int>& list) {
+        if (list.size() <= 1) return;
+        sort(list, 0, list.size() - 1);
     }
 };

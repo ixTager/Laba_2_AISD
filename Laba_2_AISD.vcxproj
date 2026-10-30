@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="InsertionSort.cpp" />
     <ClCompile Include="Laba_2_AISD.cpp" />
     <ClCompile Include="MergeSort.cpp" />
   </ItemGroup>
