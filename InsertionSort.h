@@ -2,7 +2,7 @@
 
 class InsertionSort {
 private:
-	static void insertionSort(DynamicArray<int> &list) {
+	static void insertionSort(DynamicArray<double> &list) {
 		int start = 0;
 		int end = 1;
 		while (end != list.size()) {
@@ -22,7 +22,7 @@ private:
 		}
 	}
 
-	static void insertionSortByIndexes(DynamicArray<int>& list, int start, int end) {
+	static void insertionSortByIndexes(DynamicArray<double>& list, int start, int end) {
 		for (int i = start + 1; i < end; i++) {
 			int key = list.get(i);
 			int j = i - 1;
@@ -36,12 +36,12 @@ private:
 		}
 	}
 public:
-	static void sort(DynamicArray<int>& list) {
+	static void sort(DynamicArray<double>& list) {
 		if (list.size() <= 1) return;
 		insertionSort(list);
 	}
 
-	static void sortByIndexes(DynamicArray<int>& list, int start, int end) {
+	static void sortByIndexes(DynamicArray<double>& list, int start, int end) {
 		if (list.size() <= 1) return;
 		insertionSortByIndexes(list, start, end);
 	}

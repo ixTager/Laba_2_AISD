@@ -13,6 +13,14 @@ public:
         return array.get(index);
     }
 
+    void set(int index, T& val) {
+        array.set(index, val);
+    }
+
+    void remove(int index) {
+        array.remove(index);
+    }
+
     void push(const T& val) {
         array.add(array.size(), val);
     }

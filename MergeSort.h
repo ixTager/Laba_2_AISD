@@ -4,7 +4,7 @@
 
 class MergeSort {
 private:
-    static void merge(DynamicArray<int>& list, int start, int mid, int end) {
+    static void merge(DynamicArray<double>& list, int start, int mid, int end) {
         DynamicArray<int> temp;
         int left = start;
         int right = mid + 1;
@@ -31,11 +31,11 @@ private:
         }
 
         for (int i = 0; i < temp.size(); i++) {
-            list.remove(start + i);
-            list.add(start + i, temp.get(i));
+            list.set(start + i, temp.get(i));
         }
     }
-    static void sort(DynamicArray<int>& list, int start, int end) {
+
+    static void sort(DynamicArray<double>& list, int start, int end) {
         if (start >= end) return;
 
         int mid = start + (end - start) / 2;
@@ -45,8 +45,14 @@ private:
     }
 
 public:
-    static void sort(DynamicArray<int>& list) {
+    static void sort(DynamicArray<double>& list) {
         if (list.size() <= 1) return;
         sort(list, 0, list.size() - 1);
+    }
+
+    static void mergeRuns(DynamicArray<double>& array, int start, int mid, int end) {
+        if (start >= end) return;
+
+        merge(array, start, mid, end);
     }
 };
