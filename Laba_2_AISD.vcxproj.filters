@@ -24,7 +24,7 @@
     <ClCompile Include="InsertionSort.h">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="TimSort.cpp">
+    <ClCompile Include="TimSort.h">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

@@ -18,7 +18,7 @@ public:
     }
 
     void remove(int index) {
-        array.remove(index);
+        array.remove(index);    
     }
 
     void push(const T& val) {

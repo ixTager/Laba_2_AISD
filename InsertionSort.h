@@ -8,8 +8,8 @@ private:
 		while (end != list.size()) {
 			for (int i = end; i > 0; i--) {
 				if (list.get(i) < list.get(i - 1)) {
-					int current_val = list.get(i);
-					int prev_val = list.get(i - 1);
+					double current_val = list.get(i);
+					double prev_val = list.get(i - 1);
 					list.remove(i);
 					list.remove(i - 1);
 
@@ -24,7 +24,7 @@ private:
 
 	static void insertionSortByIndexes(DynamicArray<double>& list, int start, int end) {
 		for (int i = start + 1; i < end; i++) {
-			int key = list.get(i);
+			double key = list.get(i);
 			int j = i - 1;
 
 			while (j >= start && list.get(j) > key) {

@@ -5,7 +5,7 @@
 class MergeSort {
 private:
     static void merge(DynamicArray<double>& list, int start, int mid, int end) {
-        DynamicArray<int> temp;
+        DynamicArray<double> temp;
         int left = start;
         int right = mid + 1;
 

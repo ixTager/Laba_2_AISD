@@ -48,7 +48,7 @@ private:
         int right = run.start + run.length - 1;
 
         while (left < right) {
-            int temp = array.get(left);
+            double temp = array.get(left);
 
             array.set(left, array.get(right));
             array.set(right, temp);

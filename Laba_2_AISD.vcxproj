@@ -126,7 +126,7 @@
     <ClCompile Include="InsertionSort.h" />
     <ClCompile Include="Laba_2_AISD.cpp" />
     <ClCompile Include="MergeSort.h" />
-    <ClCompile Include="TimSort.cpp" />
+    <ClCompile Include="TimSort.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DynamicArray.h" />
