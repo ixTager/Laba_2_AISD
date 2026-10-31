@@ -2,7 +2,7 @@
 #include <iostream>
 
 template <typename T>
-class DynamicList {
+class DynamicArray {
 private:
     T* arr;
     int capacity;
@@ -22,13 +22,13 @@ private:
     }
 
 public:
-    DynamicList() {
+    DynamicArray() {
         this->capacity = 16;
         this->length = 0;
         this->arr = new T[this->capacity];
     }
 
-    DynamicList(int size) {
+    DynamicArray(int size) {
         if (size <= 0) {
             this->capacity = 16;
         }
@@ -39,7 +39,7 @@ public:
         this->arr = new T[this->capacity];
     }
 
-    ~DynamicList() {
+    ~DynamicArray() {
         delete[] arr;
     }
 
@@ -85,4 +85,10 @@ public:
 
         length--;
     }
+
+    void set(int index, T value) {
+        if (index < 0 || index >= length) return;
+        arr[index] = value;
+    }
+
 };

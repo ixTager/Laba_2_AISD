@@ -21,12 +21,21 @@
     <ClCompile Include="MergeSort.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="InsertionSort.cpp">
+    <ClCompile Include="InsertionSort.h">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="TimSort.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DynamicList.h">
+    <ClInclude Include="DynamicArray.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Run.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>

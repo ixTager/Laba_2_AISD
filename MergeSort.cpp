@@ -1,11 +1,11 @@
 #include <iostream>
-#include "DynamicList.h"
+#include "DynamicArray.h"
 #include <stdexcept>
 
 class MergeSort {
 private:
-    static void merge(DynamicList<int>& list, int start, int mid, int end) {
-        DynamicList<int> temp;
+    static void merge(DynamicArray<int>& list, int start, int mid, int end) {
+        DynamicArray<int> temp;
         int left = start;
         int right = mid + 1;
 
@@ -35,7 +35,7 @@ private:
             list.add(start + i, temp.get(i));
         }
     }
-    static void sort(DynamicList<int>& list, int start, int end) {
+    static void sort(DynamicArray<int>& list, int start, int end) {
         if (start >= end) return;
 
         int mid = start + (end - start) / 2;
@@ -45,7 +45,7 @@ private:
     }
 
 public:
-    static void sort(DynamicList<int>& list) {
+    static void sort(DynamicArray<int>& list) {
         if (list.size() <= 1) return;
         sort(list, 0, list.size() - 1);
     }

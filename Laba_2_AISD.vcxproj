@@ -123,12 +123,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="InsertionSort.cpp" />
+    <ClCompile Include="InsertionSort.h" />
     <ClCompile Include="Laba_2_AISD.cpp" />
     <ClCompile Include="MergeSort.cpp" />
+    <ClCompile Include="TimSort.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DynamicList.h" />
+    <ClInclude Include="DynamicArray.h" />
+    <ClInclude Include="Run.h" />
+    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
