@@ -124,7 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="InsertionSort.h" />
-    <ClCompile Include="Laba_2_AISD.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="MergeSort.h" />
     <ClCompile Include="TimSort.h" />
   </ItemGroup>
